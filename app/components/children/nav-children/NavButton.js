@@ -8,23 +8,23 @@ import {
     Link
 } from 'react-router-dom'
 
-// Create About component
-class About extends React.Component {
+// Create NavButton component
+class NavButton extends React.Component {
     constructor() {
         super();
         this.state = {
-
+            hover: false
         }
     }
 
     render() {
         return (
-            <div>
-
+            <div className="box">
+                <h3 tabIndex={this.props.tabIndex} className="button" data-page="about">About me <span className="hover-dash"></span></h3>
             </div>
         )
     }
 }
 
 // Export the component back for use in other files
-export default About
+export default NavButton

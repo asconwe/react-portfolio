@@ -8,9 +8,13 @@ import {
     Link
 } from 'react-router-dom'
 
+// Include for animations
+// import ReactCSSTransitionGroup from 'react-css-transition-group'
+
 // Import components
 import Portfolio from './body-children/Portfolio'
-import Body from './children/Body'
+import About from './body-children/About'
+import Contact from './body-children/Contact'
 
 // Create Body component
 class Body extends React.Component {
@@ -23,9 +27,14 @@ class Body extends React.Component {
 
     render() {
         return (
-            <div className="box">
-                <Nav />
-                <Body />
+            <div className="content-div border invisible">
+                <HashRouter>
+                    <div>
+                        <Route path="/About" component={About} />
+                        <Route path="/Portfolio" component={Portfolio} />
+                        <Route path="/Contact" component={Contact} />
+                    </div>
+                </ HashRouter>
             </div>
         )
     }

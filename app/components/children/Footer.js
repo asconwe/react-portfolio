@@ -8,8 +8,8 @@ import {
     Link
 } from 'react-router-dom'
 
-// Create About component
-class About extends React.Component {
+// Create Footer component
+class Footer extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -19,12 +19,12 @@ class About extends React.Component {
 
     render() {
         return (
-            <div>
-
+            <div className="footer">
+                
             </div>
         )
     }
 }
 
 // Export the component back for use in other files
-export default About
+export default Footer

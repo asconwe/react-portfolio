@@ -8,23 +8,23 @@ import {
     Link
 } from 'react-router-dom'
 
-// Create About component
-class About extends React.Component {
+// Create Title component
+class Title extends React.Component {
     constructor() {
         super();
         this.state = {
-
+            
         }
     }
 
     render() {
         return (
-            <div>
-
+            <div className="header">
+                <h1>August Conwell</h1>
             </div>
         )
     }
 }
 
 // Export the component back for use in other files
-export default About
+export default Title
