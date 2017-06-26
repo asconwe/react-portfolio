@@ -150,15 +150,20 @@ h3.button {
 	margin-left: 0;
 }
 
-.footer {
-	position: absolute;
+.footer-wrapper {
+	position: fixed;
+	width: 100%;
 	bottom: 0;
+	left: 0;
+}
+
+.footer {
 	margin-right: auto;
 	margin-left: auto;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	width: 100%;
+	background: white;
 }
 
 .footer::after {
