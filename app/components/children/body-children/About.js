@@ -20,7 +20,15 @@ class About extends React.Component {
     render() {
         return (
             <div>
-
+                <h2>About me</h2>
+                <hr />
+                <div className="img-wrapper">
+                    <img className="profile" src="./images/profile.jpg" alt="Me on a rooftop" />
+                </div>
+                <div className="about">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea praesentium ipsum, quisquam labore ex eaque, aliquam, quae odio sint debitis harum nisi a cum delectus inventore fugit officia reprehenderit totam delectus repellendus. Accusamus voluptas vitae voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <p>Incidunt placeat saepe est impedit possimus! Soluta aut ullam inventore fugit officia reprehenderit totam delectus voluptatibus nihil. Quasi assumenda accusamus commodi repellat.</p>
+                </div>
             </div>
         )
     }

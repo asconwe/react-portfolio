@@ -3,8 +3,8 @@ html, body {
 }
 
 body {
-	color: white;
-	background: #101320;
+	color: black;
+	background: white;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 	font-weight: lighter;
 }
@@ -30,13 +30,18 @@ p {
 	padding: 10px 0 0 0;
 }
 
-input, button {
-	background: none;
-	color: white;
-	padding: 5px;
+hr {
+	color: black;
 }
 
-big-box {
+input, button {
+	background: none;
+	color: black;
+	padding: 5px 0;
+	font-size: 1em;
+}
+
+.big-box {
 	position: relative;
 	width: 100%;
 }
@@ -48,41 +53,52 @@ big-box {
 	margin-top: 0;
 }
 
-
-.header {
-	height: 30px;
-	width: 100%;
-	margin-top: 10px;
+.banner {
+	width: 80%;
 	margin-bottom: 10px;
+	padding-top: 20px;
 	padding-bottom: 15px;
 }
 
+.logo {
+	padding-top: 15px;
+	padding-right: 10px;
+	float: right;
+}
+
+.logo-img {
+	max-width: 100px;
+	
+}
+
 .title {
+	position: relative;
 	float: left;
+}
+
+.welcome {
+	width: 300px;
+	margin-right: auto;
+	margin-left: 0;
 }
 
 .button {
-	width: 107px;
 	position: relative;
-	float: left;
 	cursor: pointer;
 	padding: 10px 0;
 }
-
 
 .button.through {
 	width: 33%;
 	text-align: center;
 	padding-bottom: 2px;
+	
 }
 
-.welcome {
-	margin-left: auto;
-	margin-right: auto;
-}
+h3.button {
+	text-decoration: none;
+	color: black;
 
-.welcome.through {
-	width: 100%;
 }
 
 .hover-dash {
@@ -90,17 +106,99 @@ big-box {
 }
 
 .content-div {
-	position: absolute;
-	top: 100px;
-	width: 0;
-	background: #101320;
+	position: relative;
+	top: -150px;
+	width: auto;
+	margin-left: 0;
+	margin-right: 0;
+	background: white;
 	overflow: hidden;
+}
+
+.about {
+	text-align: justify;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+.profile {
+	width: 100%;
+	border-radius: 10%;
+	float: right;
+	margin-bottom: 10px;
+}
+
+.field {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.message {
+	max-width: 100%;
+	height: 300px;
+	font-size: 0.9em;
+}
+
+.contact-form {
+	position: relative;
+	font-weight: normal;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+}
+
+.footer::after {
+	display: block;
+	content: " ";
+	height: 0;
+	clear: both;
+}
+
+.foot-section {
+	float: left;
+	text-align: center;
+	line-height: 3em;
+}
+
+.copyright {
+	width: 50%;
+}
+
+.connect {
+	width: 100%;
+}
+
+.icon {
+	padding: 0 15px;
+	vertical-align: middle;
+}
+
+.icon-span {
+	display: inline-block;
+}
+
+.info {
+	width: 50%;
 }
 
 /* Utility classes */
 
 .border {
-	border: solid 1px white;
+	border: solid 1px black;
 }
 
 .center {
@@ -111,6 +209,15 @@ big-box {
 .pad10 {
 	padding: 10px;
 }
+
+.pad10-0 {
+	padding: 10px 0;
+}
+
+.onleft {
+	padding-left: 0;
+}
+
 
 .invisible {
 	display: none;
@@ -127,6 +234,9 @@ big-box {
 @media (max-width: 395px) {
 	.responsive-box {
 		width: 100%;
+	}
+	.profile {
+		width: 100%
 	}
 }
 
@@ -156,6 +266,13 @@ big-box {
 	.content-div {
 		left: 127px;
 		bottom: 100px;
+		margin-right: 127px;
+	}
+	.copyright, .info {
+		width: 50%;
+	}
+	.connect {
+		width: 100%;
 	}
 }
 
@@ -164,6 +281,10 @@ big-box {
 	.responsive-box {
 		width: 750px
 	}
+	.profile {
+		max-width: 230px;
+		margin: 0 0 0 10px;
+	}
 }
 
 /* lg */
@@ -171,5 +292,33 @@ big-box {
 	.responsive-box {
 		width: 900px;
 	}
+	.profile {
+		float: none;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.about {
+		width: 750px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.copyright, .info {
+		width: 200px;
+	}
+	.connect {
+		width: 475px;
+	}
 }
 
+@media (min-width: 1400px) {
+	.responsive-box {
+		width: 1150px;
+	}
+	.copyright, .info {
+		width: 250px;
+	}
+	.connect {
+		width: 625px;
+	}
+}

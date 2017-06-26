@@ -27,9 +27,10 @@ class Body extends React.Component {
 
     render() {
         return (
-            <div className="content-div border invisible">
+            <div className="content-div border visible pad10">
                 <HashRouter>
                     <div>
+                        <Route exact path="/" component={About} />
                         <Route path="/About" component={About} />
                         <Route path="/Portfolio" component={Portfolio} />
                         <Route path="/Contact" component={Contact} />

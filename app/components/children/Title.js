@@ -13,14 +13,19 @@ class Title extends React.Component {
     constructor() {
         super();
         this.state = {
-            
+
         }
     }
 
     render() {
         return (
-            <div className="header">
-                <h1>August Conwell</h1>
+            <div>
+                <div className="logo">
+                    <img className="logo-img" src="./images/AC.png" alt="logo" />
+                </div>
+                <div className="banner">
+                    <h1>August Conwell</h1>
+                </div>
             </div>
         )
     }

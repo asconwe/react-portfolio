@@ -23,7 +23,6 @@ class Nav extends React.Component {
         return (
             <div className="welcome border pad10">
                 <div className="options">
-                    <div className="box">
                         <HashRouter>
                             <div>
                                 <Link to="/About">
@@ -37,7 +36,6 @@ class Nav extends React.Component {
                                 </ Link>
                             </div>
                         </HashRouter>
-                    </div>
                 </div>
             </div>
         )
