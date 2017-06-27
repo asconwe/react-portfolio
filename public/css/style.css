@@ -61,7 +61,6 @@ input, button {
 	width: 100%;
 	margin-bottom: 10px;
 	padding-top: 10px;
-	padding-bottom: 5px;
 	text-align: center;
 }
 
@@ -115,6 +114,7 @@ input, button {
 	position: relative;
 	width: auto;
 	height: auto;
+	margin: 30px 0 0 0;
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 0;
@@ -129,6 +129,7 @@ input, button {
 	font-size: 0.8em;
 	padding-bottom: 15px;
 	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .about>h2 {
@@ -142,9 +143,7 @@ input, button {
 
 .profile {
 	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 10px;
+	margin: 10px auto;
 	padding: 10px;
 	border-radius: 50%;
 	border: solid 1px black;
@@ -175,9 +174,9 @@ input, button {
 	width: 100%;
 	margin: 0;
 	padding: 5px 10px;
-	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .message {
 	max-width: 100%;
@@ -192,30 +191,27 @@ input, button {
 	margin-left: 0;
 }
 
-.footer-wrapper {
+.header-wrapper {
 	position: absolute;
 	width: 100%;
-	-webkit-box-sizing: border-box;
 	bottom: 0;
 	left: 0;
 }
 
-.footer {
+.header {
 	margin-right: auto;
 	margin-left: auto;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	background: white;
 }
 
-.footer::after {
+.header::after {
 	display: block;
 	content: " ";
 	height: 0;
 	clear: both;
 }
 
-.foot-section {
+.head-section {
 	float: left;
 	text-align: center;
 	line-height: 3em;
@@ -276,10 +272,6 @@ input, button {
 	display: none;
 }
 
-.visible {
-	display: auto;
-}
-
 /* Media Queries */
 /* default is sm */
 
@@ -338,19 +330,21 @@ input, button {
 		width: 300px;
 		margin-right: auto;
 		margin-left: 0;
+		position: fixed;
 	}
 	.options {
 		display: inline-block;
 	}
 	.content-div {
 		left: 127px;
+		margin-top: 50px;
 		margin-right: 127px;
-		top: -150px;
+		
 	}
 	.profile {
 		float: right;
 		max-width: 230px;
-		margin: 0 0 0 0px;
+		margin: 10px;
 		border-right: none;
 		border-top: none;
 		border-bottom: none;

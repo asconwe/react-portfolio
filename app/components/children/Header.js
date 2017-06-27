@@ -10,8 +10,8 @@ import {
     Link
 } from 'react-router-dom'
 
-// Create Footer component
-class Footer extends React.Component {
+// Create Header component
+class Header extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -23,8 +23,8 @@ class Footer extends React.Component {
         return (
             <Headroom>
                 <div className="responsive-box" >
-                    <div className="footer border pad10">
-                        <div className="foot-section connect">
+                    <div className="header border pad10">
+                        <div className="head-section connect">
                             <div className="connect-container">
                                 <span className="connect-span" >Connect with me:</span>
                                 <span className="icon-span">
@@ -47,4 +47,4 @@ class Footer extends React.Component {
 }
 
 // Export the component back for use in other files
-export default Footer
+export default Header

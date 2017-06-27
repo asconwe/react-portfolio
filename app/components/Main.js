@@ -5,7 +5,7 @@ import React from 'react'
 import Title from './children/Title'
 import Nav from './children/Nav'
 import Body from './children/Body'
-import Footer from './children/Footer'
+import Header from './children/Header'
 
 // Create Main component
 class Main extends React.Component {
@@ -19,7 +19,7 @@ class Main extends React.Component {
     render() {
         return (
             <div className="responsive-box center">
-                <Footer />
+                <Header />
                 <Title homeView={this.state.homeView} />
                 <Nav smallScreen={this.state.smallScreen} landscape={this.state.landscape} homeView={this.state.homeView} />
                 <Body />

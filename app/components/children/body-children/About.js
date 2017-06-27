@@ -22,12 +22,12 @@ class About extends React.Component {
             <div>
                 <h2>About me</h2>
                 <hr />
-                <div className="img-wrapper">
-                    <img className="profile" src="./images/profile.jpg" alt="Me on a rooftop" />
-                </div>
                 <div className="about">
                     <h2>as a developer</h2>
                     <p>Enjoy the challenge of building full-stack web applications from mockup to deployment. Adept in UI design, team lead or role player, a quick study in new technologies.</p>
+                    <div className="img-wrapper">
+                        <img className="profile" src="./images/profile.jpg" alt="Me on a rooftop" />
+                    </div>
                     <h2>as a human</h2>
                     <p>Located in Northern Virginia, love making music, antiquing, and ice-hockey. Also colorblind and a distant cousin of Mister Rogers</p>
                     <hr />
