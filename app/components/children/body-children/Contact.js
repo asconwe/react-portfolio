@@ -33,7 +33,7 @@ class Contact extends React.Component {
                     </div>
                     <label htmlFor="message" >Message</label>
                     <div className="pad10-0 onleft">
-                        <textarea className="message field border" name="message" />
+                        <textarea className="message field border pad10" name="message" />
                     </div>
                     <input type="submit" className="field border" />
                 </form>

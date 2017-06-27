@@ -1,6 +1,8 @@
 // Include React
 import React from 'react'
 
+import Headroom from 'react-headroom'
+
 //Including the Link component from React Router to navigate within our application without full page reloads
 import {
     HashRouter,
@@ -19,7 +21,7 @@ class Footer extends React.Component {
 
     render() {
         return (
-            <div className="footer-wrapper">
+            <Headroom>
                 <div className="responsive-box" >
                     <div className="footer border pad10">
                         <div className="foot-section connect">
@@ -39,7 +41,7 @@ class Footer extends React.Component {
                         <div className="foot-section copyright">&#169; {this.state.date.getFullYear()}</div>
                     </div>
                 </div>
-            </div>
+            </Headroom>
         )
     }
 }

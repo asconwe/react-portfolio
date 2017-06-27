@@ -19,10 +19,10 @@ class Main extends React.Component {
     render() {
         return (
             <div className="responsive-box center">
+                <Footer />
                 <Title homeView={this.state.homeView} />
                 <Nav smallScreen={this.state.smallScreen} landscape={this.state.landscape} homeView={this.state.homeView} />
                 <Body />
-                <Footer />
             </div>
         )
     }

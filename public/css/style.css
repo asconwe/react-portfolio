@@ -58,21 +58,17 @@ input, button {
 }
 
 .banner {
-	width: 80%;
+	width: 100%;
 	margin-bottom: 10px;
-	padding-top: 20px;
-	padding-bottom: 15px;
-}
-
-.logo {
-	padding-top: 15px;
-	padding-right: 10px;
-	float: right;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	text-align: center;
 }
 
 .logo-img {
-	max-width: 100px;
-	
+	padding-left: 10px;
+	max-width: 90px;
+	vertical-align: middle
 }
 
 .title {
@@ -90,22 +86,21 @@ input, button {
 	position: relative;
 	cursor: pointer;
 	padding: 10px 0;
-}
-
-h3.button {
-	text-decoration: none;
 	color: black;
-
+	width: 30%;
 }
 
 .content-div {
 	position: relative;
 	top: -150px;
 	width: auto;
+	height: auto;
 	margin-left: 0;
 	margin-right: 0;
+	margin-bottom: 0;
+	bottom: 100px;
 	background: white;
-	overflow: hidden;
+	overflow: auto;
 }
 
 .about {
@@ -159,7 +154,7 @@ h3.button {
 .field {
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 5px 0;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -167,7 +162,7 @@ h3.button {
 .message {
 	max-width: 100%;
 	height: 150px;
-	font-size: 0.9em;
+	font-size: 1.2em;
 }
 
 .contact-form {
