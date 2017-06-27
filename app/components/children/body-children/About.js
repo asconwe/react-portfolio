@@ -26,8 +26,10 @@ class About extends React.Component {
                     <img className="profile" src="./images/profile.jpg" alt="Me on a rooftop" />
                 </div>
                 <div className="about">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea praesentium ipsum, quisquam labore ex eaque, aliquam, quae odio sint debitis harum nisi a cum delectus inventore fugit officia reprehenderit totam delectus repellendus. Accusamus voluptas vitae voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    <p>Incidunt placeat saepe est impedit possimus! Soluta aut ullam inventore fugit officia reprehenderit totam delectus voluptatibus nihil. Quasi assumenda accusamus commodi repellat.</p>
+                    <h2>Me as a developer</h2>
+                    <p>Full-stack web developer, able to build full-stack web applications from mockup to deployment. Adept in UI design, excellent team lead or role player, and a quick study in new technologies.</p>
+                    <h2>Me as a human</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta consectetur veritatis vitae hic placeat ipsum sint non excepturi, repellat minima necessitatibus nobis cupiditate, quasi facilis, iste veniam explicabo mollitia.</p>
                 </div>
             </div>
         )

@@ -30,6 +30,10 @@ p {
 	padding: 10px 0 0 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 hr {
 	color: black;
 }
@@ -122,11 +126,26 @@ h3.button {
 	font-size: 0.8em;
 }
 
+.about>h2 {
+	margin-top: 15px;
+}
+
 .profile {
 	width: 100%;
 	border-radius: 10%;
 	float: right;
 	margin-bottom: 10px;
+}
+
+.portfolio {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	font-weight: normal;
+}
+
+.portfolio:nth-child(1) {
+	margin-top: 0;
 }
 
 .field {
@@ -296,17 +315,6 @@ h3.button {
 @media (min-width: 1100px) {
 	.responsive-box {
 		width: 900px;
-	}
-	.profile {
-		float: none;
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	.about {
-		width: 750px;
-		margin-right: auto;
-		margin-left: auto;
 	}
 	.copyright, .info {
 		width: 200px;
