@@ -1,6 +1,9 @@
 // Include React
 import React from 'react'
 
+// Import axios for http requests
+import axios from 'axios'
+
 //Including the Link component from React Router to navigate within our application without full page reloads
 import {
     HashRouter,
@@ -21,8 +24,14 @@ class Body extends React.Component {
     constructor() {
         super();
         this.state = {
-
+            projects: []
         }
+    }
+    
+    componentDidMount() {
+        axios.get('/api/projects').then((projects) => {
+            this.setState({ projects: projects.data })
+        })
     }
 
     render() {
@@ -32,7 +41,7 @@ class Body extends React.Component {
                     <div>
                         <Route exact path="/" component={About} />
                         <Route path="/About" component={About} />
-                        <Route path="/Portfolio" component={Portfolio} />
+                        <Route path="/Portfolio" component={(props) => (<Portfolio projects={this.state.projects}/>) }/>
                         <Route path="/Contact" component={Contact} />
                     </div>
                 </ HashRouter>

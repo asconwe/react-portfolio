@@ -22,16 +22,16 @@ class Nav extends React.Component {
     render() {
         return (
             <div className="welcome border pad10">
-                <div className="options">
+                <div>
                         <HashRouter>
-                            <div>
-                                <Link to="/About">
+                            <div className="options">
+                                <Link className="nav-button" to="/About">
                                     <NavButton section="About" tabIndex="0" />
                                 </ Link>
-                                <Link to="/Portfolio">
+                                <Link className="nav-button" to="/Portfolio">
                                     <NavButton section="Portfolio" tabIndex="1" />
                                 </ Link>
-                                <Link to="/Contact">
+                                <Link className="nav-button" to="/Contact">
                                     <NavButton section="Contact" tabIndex="2" />
                                 </ Link>
                             </div>

@@ -53,7 +53,7 @@ input, button {
 .responsive-box {
 	position: relative;
 	height: 100%;
-	width: 95%;
+	width: 100%;
 	margin-top: 0;
 }
 
@@ -77,9 +77,30 @@ input, button {
 }
 
 .welcome {
-	width: 300px;
-	margin-right: auto;
+	margin-right: 0;
 	margin-left: 0;
+}
+
+.options {
+	margin-right: 0;
+	margin-left: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-button.a {
+	flex-grow: 1;
+	order: 1;
+}
+
+.nav-button.b {
+	flex-grow: 1;
+	order: 2;
+}
+
+.nav-button.c {
+	flex-grow: 1;
+	order: 3;
 }
 
 .button {
@@ -87,18 +108,16 @@ input, button {
 	cursor: pointer;
 	padding: 10px 0;
 	color: black;
-	width: 30%;
+	width: 100%;
 }
 
 .content-div {
 	position: relative;
-	top: -150px;
 	width: auto;
 	height: auto;
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 0;
-	bottom: 100px;
 	background: white;
 	overflow: auto;
 }
@@ -122,13 +141,14 @@ input, button {
 }
 
 .profile {
-	width: 75%;
+	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 10px;
 	padding: 10px;
 	border-radius: 50%;
 	border: solid 1px black;
+	width: 60%;
 }
 
 .portfolio {
@@ -154,7 +174,7 @@ input, button {
 .field {
 	width: 100%;
 	margin: 0;
-	padding: 5px 0;
+	padding: 5px 10px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -203,10 +223,15 @@ input, button {
 
 .copyright {
 	width: 50%;
+	display: none;
 }
 
 .connect {
 	width: 100%;
+}
+
+.connect-span {
+	display: none;
 }
 
 .icon {
@@ -220,6 +245,7 @@ input, button {
 
 .info {
 	width: 50%;
+	display: none;
 }
 
 /* Utility classes */
@@ -259,12 +285,8 @@ input, button {
 
 /* xs */
 @media (max-width: 395px) {
-	.responsive-box {
-		width: 100%;
-	}
-	.profile {
-		width: 100%
-	}
+
+
 }
 
 /* sm-md */
@@ -287,16 +309,14 @@ input, button {
 	.header {
 		height: 50px;
 	}
+	.connect-span {
+		display: inline;
+	}
 	.button {
 		float: none;
 	}
-	.content-div {
-		left: 127px;
-		bottom: 100px;
-		margin-right: 127px;
-	}
 	.profile {
-		float: right;
+		float: none;
 	}
 	.footer-wrapper {
 		position: fixed;
@@ -314,9 +334,23 @@ input, button {
 	.responsive-box {
 		width: 750px
 	}
+	.welcome {
+		width: 300px;
+		margin-right: auto;
+		margin-left: 0;
+	}
+	.options {
+		display: inline-block;
+	}
+	.content-div {
+		left: 127px;
+		margin-right: 127px;
+		top: -150px;
+	}
 	.profile {
+		float: right;
 		max-width: 230px;
-		margin: 0 0 0 20px;
+		margin: 0 0 0 0px;
 		border-right: none;
 		border-top: none;
 		border-bottom: none;
@@ -324,6 +358,7 @@ input, button {
 	}
 	.copyright, .info {
 		width: 20%;
+		display: inline-block;
 	}
 	.connect {
 		width: 60%;
@@ -342,6 +377,7 @@ input, button {
 		width: 475px;
 	}
 }
+
 /* xl */
 @media (min-width: 1400px) {
 	.responsive-box {

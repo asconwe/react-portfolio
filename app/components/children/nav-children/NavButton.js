@@ -20,7 +20,7 @@ class NavButton extends React.Component {
     render() {
         return (
             <div>
-                <h3 tabIndex={this.props.tabIndex} className="button" data-page="about">{this.props.section}<span className="hover-dash"></span></h3>
+                <h3 tabIndex={this.props.tabIndex} className="button" data-page="about">{this.props.section}</h3>
             </div>
         )
     }

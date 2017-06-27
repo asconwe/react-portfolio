@@ -1,8 +1,6 @@
 // Include React
 import React from 'react'
 
-// Import axios for http requests
-import axios from 'axios'
 
 //Including the Link component from React Router to navigate within our application without full page reloads
 import {
@@ -16,23 +14,13 @@ import Project from './portfolio-children/Project'
 
 // Create Portfolio component
 class Portfolio extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            projects: []
-        }
-    }
-    componentDidMount() {
-        axios.get('/api/projects').then((projects) => {
-            this.setState({ projects: projects.data })
-        })
-    }
+
     render() {
         return (
             <div>
                 <h2>Projects</h2>
                 <hr />
-                {this.state.projects.map((project, index) => {
+                {this.props.projects.map((project, index) => {
                     return (
                         <div className="portfolio" key={index}>
                             <Project name={project.name} description={project.description} html_url={project.html_url} homepage={project.homepage} />
