@@ -92,21 +92,10 @@ input, button {
 	padding: 10px 0;
 }
 
-.button.through {
-	width: 33%;
-	text-align: center;
-	padding-bottom: 2px;
-	
-}
-
 h3.button {
 	text-decoration: none;
 	color: black;
 
-}
-
-.hover-dash {
-	float: right;
 }
 
 .content-div {
@@ -124,20 +113,31 @@ h3.button {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 0.8em;
+	padding-bottom: 15px;
+	padding-left: 10px;
 }
 
 .about>h2 {
-	margin-top: 15px;
+	margin: 10px 0 0 0;
+}
+
+.about>p {
+	line-height: 1.2em;
+	padding-bottom: 5px;
 }
 
 .profile {
-	width: 100%;
-	border-radius: 10%;
-	float: right;
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 50%;
+	border: solid 1px black;
 }
 
 .portfolio {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 10px;
@@ -146,6 +146,14 @@ h3.button {
 
 .portfolio:nth-child(1) {
 	margin-top: 0;
+}
+
+.project>h2 {
+	margin: 0;
+}
+
+.project>p {
+	margin-bottom: 5px;
 }
 
 .field {
@@ -158,7 +166,7 @@ h3.button {
 }
 .message {
 	max-width: 100%;
-	height: 300px;
+	height: 150px;
 	font-size: 0.9em;
 }
 
@@ -170,8 +178,9 @@ h3.button {
 }
 
 .footer-wrapper {
-	position: fixed;
+	position: absolute;
 	width: 100%;
+	-webkit-box-sizing: border-box;
 	bottom: 0;
 	left: 0;
 }
@@ -181,7 +190,6 @@ h3.button {
 	margin-left: auto;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
 	background: white;
 }
 
@@ -292,6 +300,12 @@ h3.button {
 		bottom: 100px;
 		margin-right: 127px;
 	}
+	.profile {
+		float: right;
+	}
+	.footer-wrapper {
+		position: fixed;
+	}
 	.copyright, .info {
 		width: 50%;
 	}
@@ -307,7 +321,17 @@ h3.button {
 	}
 	.profile {
 		max-width: 230px;
-		margin: 0 0 0 10px;
+		margin: 0 0 0 20px;
+		border-right: none;
+		border-top: none;
+		border-bottom: none;
+		padding: 10px;
+	}
+	.copyright, .info {
+		width: 20%;
+	}
+	.connect {
+		width: 60%;
 	}
 }
 
@@ -323,7 +347,7 @@ h3.button {
 		width: 475px;
 	}
 }
-
+/* xl */
 @media (min-width: 1400px) {
 	.responsive-box {
 		width: 1150px;

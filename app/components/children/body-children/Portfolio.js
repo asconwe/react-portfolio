@@ -32,8 +32,8 @@ class Portfolio extends React.Component {
             <div>
                 {this.state.projects.map((project, index) => {
                     return (
-                        <div className="portfolio">
-                            <Project name={project.name} description={project.description} html_url={project.html_url} homepage={project.homepage} key={index}/>
+                        <div className="portfolio" key={index}>
+                            <Project name={project.name} description={project.description} html_url={project.html_url} homepage={project.homepage} />
                         </div>
                     )
                 })}
