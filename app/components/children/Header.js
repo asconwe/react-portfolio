@@ -21,7 +21,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <Headroom>
+            <Headroom disableInlineStyles>
                 <div className="responsive-box" >
                     <div className="header border pad10">
                         <div className="head-section connect">
@@ -35,10 +35,8 @@ class Header extends React.Component {
                                 </span>
                             </div>
                         </div>
-                        <div className="foot-section info">
-                            ^^ built with React!
-                        </div>
-                        <div className="foot-section copyright">&#169; {this.state.date.getFullYear()}</div>
+                        <div className="head-section info"><h3> ...built with React!</h3></div>
+                        <div className="head-section copyright">a.conwell &#169; {this.state.date.getFullYear()}</div>
                     </div>
                 </div>
             </Headroom>

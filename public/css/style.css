@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	overflow: overlay;
 }
 
 body {
@@ -57,27 +58,56 @@ input, button {
 	margin-top: 0;
 }
 
+.headroom {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.headroom--unfixed {
+  position: relative;
+  transform: translateY(0);
+}
+.headroom--scrolled {
+  transition: transform 200ms ease-in-out;
+}
+.headroom--unpinned {
+  position: fixed;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  position: fixed;
+  transform: translateY(0%);
+}
+
 .banner {
+	position: relative;
 	width: 100%;
-	margin-bottom: 10px;
+	height: 80px;
+	margin-bottom: 30px;
 	padding-top: 10px;
 	text-align: center;
 }
 
-.logo-img {
-	padding-left: 10px;
-	max-width: 90px;
-	vertical-align: middle
+.name {
+	display: inline;
+	vertical-align: middle;
+	padding-left: 15px;
+	font-size: 3em;
+	padding-bottom: 10px;	
 }
 
-.title {
-	position: relative;
-	float: left;
+.logo-img {
+	padding: 10px;
+	max-width: 90px;
+	vertical-align: middle;
 }
 
 .welcome {
+	position: relative;
 	margin-right: 0;
 	margin-left: 0;
+	background: white;
 }
 
 .options {
@@ -114,7 +144,7 @@ input, button {
 	position: relative;
 	width: auto;
 	height: auto;
-	margin: 30px 0 0 0;
+	margin: 15px 0 0 0;
 	margin-left: 0;
 	margin-right: 0;
 	margin-bottom: 0;
@@ -180,7 +210,7 @@ input, button {
 }
 .message {
 	max-width: 100%;
-	height: 150px;
+	height: 80px;
 	font-size: 1.2em;
 }
 
@@ -217,11 +247,6 @@ input, button {
 	line-height: 3em;
 }
 
-.copyright {
-	width: 50%;
-	display: none;
-}
-
 .connect {
 	width: 100%;
 }
@@ -237,6 +262,12 @@ input, button {
 
 .icon-span {
 	display: inline-block;
+}
+
+.copyright {
+	width: 50%;
+	display: none;
+	font-weight: normal;
 }
 
 .info {
@@ -313,16 +344,39 @@ input, button {
 	.footer-wrapper {
 		position: fixed;
 	}
-	.copyright, .info {
-		width: 50%;
-	}
-	.connect {
-		width: 100%;
-	}
 }
 
 /* md */
 @media (min-width: 800px) {
+	.headroom {
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+	}
+	.headroom--unfixed {
+		position: relative;
+		transform: translateY(0);
+	}
+	.headroom--scrolled {
+		transition:	transform 200ms ease-in-out;
+	}
+	.headroom--unpinned {
+		position: fixed;
+		transform: translateY(-0%);
+	}
+	.headroom--pinned {
+		position: fixed;
+		transform: translateY(0%);
+	}
+	.title {
+		position: fixed;
+		right: 0;
+		left: 0;
+		text-align: center;
+		display: inline-block;
+		width: auto;
+	}
 	.responsive-box {
 		width: 750px
 	}
@@ -337,7 +391,7 @@ input, button {
 	}
 	.content-div {
 		left: 127px;
-		margin-top: 50px;
+		margin-top: 70px;
 		margin-right: 127px;
 		
 	}

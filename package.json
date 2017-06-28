@@ -24,7 +24,10 @@
   "homepage": "https://github.com/asconwe/react-portfolio#readme",
   "dependencies": {
     "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
     "express": "^4.15.3",
+    "nodemailer": "^4.0.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-headroom": "^2.1.5",

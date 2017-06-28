@@ -24,7 +24,7 @@ class Project extends React.Component {
                     <h2>{this.getName()}</h2>
                     <p>{this.getDescription()}</p>
                     <a href={this.props.html_url}>GitHub</a>
-                    {this.props.homepage ? <a href={this.props.homepage}>Live</a> : <div></div>}
+                    {this.props.homepage ? <span> - <a href={this.props.homepage}>Live</a></span> : <div></div>}
                 </div>
             </div>
         )

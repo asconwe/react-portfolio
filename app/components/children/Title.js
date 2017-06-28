@@ -19,9 +19,11 @@ class Title extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="banner">
-                    <h1>August <img className="logo-img" src="./images/AC.png" alt="logo" /> Conwell</h1>
+            <div className="banner">
+                <div className="title">
+                    <h1 className="name">August
+                    <img className="logo-img" src="./images/AC.png" alt="logo" />
+                        Conwell</h1>
                 </div>
             </div>
         )

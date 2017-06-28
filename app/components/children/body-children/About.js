@@ -24,15 +24,15 @@ class About extends React.Component {
                 <hr />
                 <div className="about">
                     <h2>as a developer</h2>
-                    <p>Enjoy the challenge of building full-stack web applications from mockup to deployment. Adept in UI design, team lead or role player, a quick study in new technologies.</p>
+                    <p>Enjoy the challenge of building full-stack web applications from mockup to deployment. Adept in UI design, comfortable as team lead or role player, a quick study in new technologies.</p>
                     <div className="img-wrapper">
                         <img className="profile" src="./images/profile.jpg" alt="Me on a rooftop" />
                     </div>
                     <h2>as a human</h2>
-                    <p>Located in Northern Virginia, love making music, antiquing, and ice-hockey. Also colorblind and a distant cousin of Mister Rogers</p>
+                    <p>Located in Northern Virginia, love making music, antiquing, and ice-hockey. Also colorblind and a distant cousin of Mister Rogers.</p>
                     <hr />
                     <h2>About this portfolio</h2>
-                    <p>Built with React and node js - dynamically pulls and parses GitHub repos as portfolio projects</p>
+                    <p>Built with React and Node.js - dynamically pulls and parses GitHub repos as portfolio projects.</p>
                     <a href="">View the GitHub repository</a>
                 </div>
             </div>

@@ -20,7 +20,7 @@ class Portfolio extends React.Component {
             <div>
                 <h2>Projects</h2>
                 <hr />
-                {this.props.projects.map((project, index) => {
+                {this.props.projects.reverse().map((project, index) => {
                     return (
                         <div className="portfolio" key={index}>
                             <Project name={project.name} description={project.description} html_url={project.html_url} homepage={project.homepage} />
