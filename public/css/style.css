@@ -1,6 +1,6 @@
 html, body {
 	height: 100%;
-	overflow: overlay;
+	/*overflow: overlay;*/
 }
 
 body {
@@ -58,28 +58,6 @@ input, button {
 	margin-top: 0;
 }
 
-.headroom {
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-}
-.headroom--unfixed {
-  position: relative;
-  transform: translateY(0);
-}
-.headroom--scrolled {
-  transition: transform 200ms ease-in-out;
-}
-.headroom--unpinned {
-  position: fixed;
-  transform: translateY(-100%);
-}
-.headroom--pinned {
-  position: fixed;
-  transform: translateY(0%);
-}
-
 .banner {
 	position: relative;
 	width: 100%;
@@ -93,13 +71,13 @@ input, button {
 	display: inline;
 	vertical-align: middle;
 	padding-left: 15px;
-	font-size: 3em;
+	font-size: 2.5em;
 	padding-bottom: 10px;	
 }
 
 .logo-img {
 	padding: 10px;
-	max-width: 90px;
+	max-width: 80px;
 	vertical-align: middle;
 }
 
@@ -222,9 +200,7 @@ input, button {
 }
 
 .header-wrapper {
-	position: absolute;
 	width: 100%;
-	bottom: 0;
 	left: 0;
 }
 
@@ -341,34 +317,11 @@ input, button {
 	.profile {
 		float: none;
 	}
-	.footer-wrapper {
-		position: fixed;
-	}
 }
 
 /* md */
 @media (min-width: 800px) {
-	.headroom {
-		top: 0;
-		left: 0;
-		right: 0;
-		z-index: 999;
-	}
-	.headroom--unfixed {
-		position: relative;
-		transform: translateY(0);
-	}
-	.headroom--scrolled {
-		transition:	transform 200ms ease-in-out;
-	}
-	.headroom--unpinned {
-		position: fixed;
-		transform: translateY(-0%);
-	}
-	.headroom--pinned {
-		position: fixed;
-		transform: translateY(0%);
-	}
+	
 	.title {
 		position: fixed;
 		right: 0;
@@ -376,6 +329,12 @@ input, button {
 		text-align: center;
 		display: inline-block;
 		width: auto;
+	}
+	.name {
+		font-size: 3em;
+	}
+	.logo-img {
+		max-width: 90px;
 	}
 	.responsive-box {
 		width: 750px

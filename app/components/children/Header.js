@@ -21,7 +21,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <Headroom disableInlineStyles>
+            <Headroom>
                 <div className="responsive-box" >
                     <div className="header border pad10">
                         <div className="head-section connect">
