@@ -228,6 +228,7 @@ input, button {
 }
 
 .connect-span {
+	ling-height: 3.2em;
 	display: none;
 }
 
@@ -238,6 +239,10 @@ input, button {
 
 .icon-span {
 	display: inline-block;
+}
+
+.icon-span>a {
+	color: black;
 }
 
 .copyright {
@@ -321,7 +326,21 @@ input, button {
 
 /* md */
 @media (min-width: 800px) {
-	
+	.connect-container {
+		display: flex;
+	}
+	.connect-span {
+		flex-grow: 1;
+		text-align: center;
+	}
+	.icon-span {
+		flex-grow: 1;
+		text-align: left;
+	}
+	.info {
+		font-size: 0.9em;
+		line-height: 3.2em;
+	}
 	.title {
 		position: fixed;
 		right: 0;
@@ -352,7 +371,6 @@ input, button {
 		left: 127px;
 		margin-top: 70px;
 		margin-right: 127px;
-		
 	}
 	.profile {
 		float: right;
@@ -382,6 +400,10 @@ input, button {
 	}
 	.connect {
 		width: 475px;
+	}
+	.info {
+		font-size: 1em;
+		line-height: 2.9em;
 	}
 }
 

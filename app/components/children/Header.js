@@ -23,15 +23,15 @@ class Header extends React.Component {
         return (
             <Headroom>
                 <div className="responsive-box" >
-                    <div className="header border pad10">
+                    <div className="header pad10">
                         <div className="head-section connect">
                             <div className="connect-container">
                                 <span className="connect-span" >Connect with me:</span>
                                 <span className="icon-span">
-                                    <i className="icon fa fa-github fa-2x" aria-hidden="true"></i>
-                                    <i className="icon fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                                    <i className="icon fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-                                    <i className="icon fa fa-soundcloud fa-2x" aria-hidden="true"></i>
+                                    <a href="https://github.com/asconwe"><i className="icon fa fa-github fa-2x" aria-hidden="true"></i></a>
+                                    <a href="https://www.linkedin.com/in/august-conwell-04839aa6/"><i className="icon fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/august.conwell"><i className="icon fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                                    <a href="https://soundcloud.com/aconwell"><i className="icon fa fa-soundcloud fa-2x" aria-hidden="true"></i></a>
                                 </span>
                             </div>
                         </div>
