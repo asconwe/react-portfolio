@@ -42,8 +42,4 @@ const apiMailer = (app) => {
     })
 }
 
-
-
-
-
 module.exports = apiMailer;
