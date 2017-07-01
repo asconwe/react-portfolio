@@ -4,6 +4,11 @@ import React from 'react'
 //Including axios for requests;
 import axios from 'axios'
 
+import Form from './contact-children/Form'
+import Err from './contact-children/Err'
+import Sent from './contact-children/Sent'
+import Submitted from './contact-children/Submitted'
+
 // Create Contact component
 class Contact extends React.Component {
     constructor() {
@@ -16,39 +21,25 @@ class Contact extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    
+
     handleChange(event) {
         const obj = {};
         const { name, value } = event.target;
         obj[name] = value;
         this.setState(obj);
     }
-    
+
     handleSubmit(event) {
         event.preventDefault();
-        axios.post('/api/mailer', this.state).then((sucess) => (console.log('message sent')));
+        const body = this.state;
+        this.props.handleEmail(body)
     }
 
     render() {
         return (
             <div>
-                <h2>Contact</h2>
-                <form className="contact-form" onSubmit={this.handleSubmit}>
-                    <hr />
-                    <label htmlFor="name" >Name</label>
-                    <div className="pad10-0">
-                        <input className="field border" type="text" name="name" onChange={this.handleChange} />
-                    </div>
-                    <label htmlFor="email" >Email</label>
-                    <div className="pad10-0">
-                        <input className="field border" type="text" name="email" onChange={this.handleChange}/>
-                    </div>
-                    <label htmlFor="message" >Message</label>
-                    <div className="pad10-0 onleft">
-                        <textarea className="message field border pad10" name="message" onChange={this.handleChange}/>
-                    </div>
-                    <input type="submit" className="field border" />
-                </form>
+                {/*If submitted and sent, return Sent, else if error, return Error, else if submitted, return Submitted, else return Form*/}
+                {this.props.submitted && this.props.sent ? <Sent resetContact={this.props.resetContact} /> : this.props.error ? <Err resetContact={this.props.resetContact} /> : this.props.submitted ? <Submitted /> : <Form handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>}
             </div>
         )
     }

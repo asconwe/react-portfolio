@@ -24,13 +24,32 @@ class Body extends React.Component {
     constructor() {
         super();
         this.state = {
-            projects: []
+            projects: [],
+            emailSubmitted: false,
+            emailSent: false,
+            emailError: false
         }
+        this.handleEmail = this.handleEmail.bind(this);
+        this.resetContact = this.resetContact.bind(this);
     }
     
     componentDidMount() {
         axios.get('/api/projects').then((projects) => {
             this.setState({ projects: projects.data })
+        })
+    }
+
+    handleEmail(body) { 
+        this.setState({emailSubmitted: true});
+        axios.post('/api/mailer', body).then((sucess) => (this.setState({ emailSent: true }))).catch((error) => (this.setState({ emialError: true })));
+    }
+
+    resetContact() {
+        console.log('reset')
+        this.setState({
+            emailSubmitted: false,
+            emailSent: false,
+            emailError: false
         })
     }
 
@@ -42,7 +61,7 @@ class Body extends React.Component {
                         <Route exact path="/" component={About} />
                         <Route path="/About" component={About} />
                         <Route path="/Portfolio" component={(props) => (<Portfolio projects={this.state.projects}/>) }/>
-                        <Route path="/Contact" component={Contact} />
+                        <Route path="/Contact/:reset?" component={(props) => (<Contact resetContact={this.resetContact} handleEmail={this.handleEmail} submitted={this.state.emailSubmitted} sent={this.state.emailSent} error={this.state.emailError} />)} />
                     </div>
                 </ HashRouter>
             </div>
