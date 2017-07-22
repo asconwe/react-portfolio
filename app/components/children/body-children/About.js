@@ -33,7 +33,7 @@ class About extends React.Component {
                     <hr />
                     <h2>About this portfolio</h2>
                     <p>Built with React and Node.js - dynamically pulls and parses GitHub repos as portfolio projects.</p>
-                    <a href="">View the GitHub repository</a>
+                    <a href="https://github.com/asconwe/react-portfolio">View the GitHub repository</a>
                 </div>
             </div>
         )
