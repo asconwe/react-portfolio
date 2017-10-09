@@ -1,9 +1,16 @@
 const fs = require('fs');
+const request = require('request')
 
 module.exports = function(app) {
     app.get('/api/projects', (req, res) => {
-        fs.readFile(__dirname + "/data/projects.JSON", (err, data) => {
-            if (err) console.log(err);
+        request({
+            "method": "GET",
+            "uri": "http://api.github.com/users/asconwe/repos?acces_token=" + process.env.GITHUB_TOKEN,
+            "headers": {
+                "User-Agent": "request"
+            },
+        }, (error, response, body) => {
+            if (error) console.log(error);
             const projects = JSON.parse(data);
             console.log(typeof projects);
             const portfolioProjects = projects.filter((project) => {
@@ -15,7 +22,6 @@ module.exports = function(app) {
                     return description.charAt(length - 1) === "*"
                 }
             });
-            console.log(portfolioProjects);
             res.json(portfolioProjects);
         });
     });
