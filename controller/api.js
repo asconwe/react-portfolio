@@ -11,7 +11,7 @@ module.exports = function(app) {
             },
         }, (error, response, body) => {
             if (error) console.log(error);
-            const projects = JSON.parse(data);
+            const projects = JSON.parse(body);
             console.log(typeof projects);
             const portfolioProjects = projects.filter((project) => {
                 const description = project.description;
