@@ -29,7 +29,7 @@ class Header extends React.Component {
                                 <span className="connect-span" >Connect with me:</span>
                                 <span className="icon-span">
                                     <a href="https://github.com/asconwe"><i className="icon fa fa-github fa-2x" aria-hidden="true"></i></a>
-                                    <a href="https://www.linkedin.com/in/august-conwell-04839aa6/"><i className="icon fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                                    <a href="https://www.linkedin.com/in/august-conwell/"><i className="icon fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
                                     <a href="https://www.facebook.com/august.conwell"><i className="icon fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
                                     <a href="https://soundcloud.com/aconwell"><i className="icon fa fa-soundcloud fa-2x" aria-hidden="true"></i></a>
                                 </span>
