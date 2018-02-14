@@ -18,6 +18,7 @@ import {
 import Portfolio from './body-children/Portfolio'
 import About from './body-children/About'
 import Contact from './body-children/Contact'
+import Valentine from './Valentine'
 
 // Create Body component
 class Body extends React.Component {
@@ -62,6 +63,7 @@ class Body extends React.Component {
                         <Route path="/About" component={About} />
                         <Route path="/Portfolio" component={(props) => (<Portfolio projects={this.state.projects}/>) }/>
                         <Route path="/Contact/:reset?" component={(props) => (<Contact resetContact={this.resetContact} handleEmail={this.handleEmail} submitted={this.state.emailSubmitted} sent={this.state.emailSent} error={this.state.emailError} />)} />
+                        <Route path="/my-valentine" component={(props) => (<Valentine />) }/>
                     </div>
                 </ HashRouter>
             </div>
