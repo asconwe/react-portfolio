@@ -1,0 +1,393 @@
+html, body {
+	height: 100%;
+	/*overflow: overlay;*/
+}
+
+body {
+	color: black;
+	background: white;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-weight: lighter;
+}
+
+h1, h2, h3 {
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 2.3em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+p {
+	font-size: 1.3em;
+	padding: 10px 0 0 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	color: black;
+}
+
+input, button {
+	background: none;
+	color: black;
+	padding: 5px 0;
+	font-size: 1em;
+}
+
+.big-box {
+	position: relative;
+	width: 100%;
+}
+
+.responsive-box {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin-top: 0;
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.name {
+	display: inline;
+	vertical-align: middle;
+	font-size: 2.5em;
+	padding-bottom: 10px;	
+}
+
+.logo-img {
+	padding: 10px;
+	max-width: 80px;
+	vertical-align: middle;
+}
+
+.welcome {
+	position: relative;
+	margin-right: 0;
+	margin-left: 0;
+	background: white;
+}
+
+.options {
+	margin-right: 0;
+	margin-left: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-button.a {
+	flex-grow: 1;
+	order: 1;
+}
+
+.nav-button.b {
+	flex-grow: 1;
+	order: 2;
+}
+
+.nav-button.c {
+	flex-grow: 1;
+	order: 3;
+}
+
+.button {
+	position: relative;
+	cursor: pointer;
+	padding: 10px 0;
+	color: black;
+	width: 100%;
+}
+
+.content-div {
+	position: relative;
+	width: auto;
+	height: auto;
+	margin: 15px 0 0 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	background: white;
+	overflow: auto;
+}
+
+.about {
+	text-align: justify;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 0.8em;
+	padding-bottom: 15px;
+	padding-right: 10px;
+}
+
+.about>h2 {
+	margin: 10px 0 0 0;
+}
+
+.about>p {
+	line-height: 1.2em;
+	padding-bottom: 5px;
+}
+
+.profile {
+	display: block;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 50%;
+	border: solid 1px black;
+	width: 60%;
+}
+
+.portfolio {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	font-weight: normal;
+}
+
+.portfolio:nth-child(1) {
+	margin-top: 0;
+}
+
+.project>h2 {
+	margin: 0;
+}
+
+.project>p {
+	margin-bottom: 5px;
+}
+
+.field {
+	width: 100%;
+	margin: 0;
+	padding: 5px 10px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.message {
+	max-width: 100%;
+	height: 80px;
+	font-size: 1.2em;
+}
+
+.contact-form {
+	position: relative;
+	font-weight: normal;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.header-wrapper {
+	width: 100%;
+	left: 0;
+}
+
+.header {
+	margin-right: auto;
+	margin-left: auto;
+	background: white;
+}
+
+.header::after {
+	display: block;
+	content: " ";
+	height: 0;
+	clear: both;
+}
+
+.head-section {
+	float: left;
+	text-align: center;
+}
+
+.connect {
+	width: 100%;
+}
+
+.connect-logo {
+	width: 30px;
+	margin: 10px;
+}
+
+.icon {
+	padding: 0 15px;
+	vertical-align: middle;
+}
+
+.icon-span {
+	display: inline-block;
+}
+
+.icon-span>a {
+	color: black;
+}
+
+.copyright {
+	width: 50%;
+	display: none;
+	font-weight: normal;
+}
+
+.info {
+	width: 50%;
+	display: none;
+}
+
+/* Utility classes */
+
+.border {
+	border: solid 1px black;
+}
+
+.center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.pad10 {
+	padding: 12px;
+}
+
+.pad10-0 {
+	padding: 10px 0;
+}
+
+.onleft {
+	padding-left: 0;
+}
+
+
+.invisible {
+	display: none;
+}
+
+/* Media Queries */
+/* default is sm */
+
+/* xs */
+@media (max-width: 395px) {
+
+
+}
+
+/* sm-md */
+
+@media (min-width: 550px) {
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2.0;
+	}
+	h3 {
+		font-size: 1.5;
+	}
+	.responsive-box {
+		width: 500px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.header {
+		height: 50px;
+	}
+	.button {
+		float: none;
+	}
+	.profile {
+		float: none;
+	}
+}
+
+/* md and larger */
+@media (min-width: 800px) {
+	.connect-container {
+		display: flex;
+	}
+	.head-section {
+		line-height: 3em;
+	}
+	.icon-span {
+		flex-grow: 1;
+		text-align: left;
+	}
+	.info, .copyright {
+		font-size: 0.9em;
+		padding-top: 7px;
+		line-height: 3.2em;
+	}
+
+	.title {
+		position: fixed;
+		right: 0;
+		left: 0;
+		text-align: center;
+		display: inline-block;
+		width: auto;
+	}
+	.name {
+		font-size: 3em;
+		padding-left: 15px;
+	}
+	.logo-img {
+		max-width: 90px;
+	}
+	.responsive-box {
+		width: 750px
+	}
+	.welcome {
+		width: 300px;
+		margin-right: auto;
+		margin-left: 0;
+		position: fixed;
+	}
+	.options {
+		display: inline-block;
+	}
+	.content-div {
+		left: 127px;
+		margin-top: 70px;
+		margin-right: 127px;
+	}
+	.profile {
+		float: right;
+		max-width: 230px;
+		margin: 10px;
+		border-right: none;
+		border-top: none;
+		border-bottom: none;
+		padding: 10px;
+	}
+	.copyright, .info {
+		width: 20%;
+		display: inline-block;
+	}
+	.connect {
+		width: 60%;
+	}
+}
+
+

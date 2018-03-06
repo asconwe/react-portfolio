@@ -1,44 +1,19 @@
 {
-  "name": "react-portfolio",
-  "version": "1.0.0",
-  "description": "Portfolio",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "webpack",
-    "dev": "webpack -w",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/asconwe/react-portfolio.git"
-  },
-  "keywords": [
-    "Portfolio"
-  ],
-  "author": "August",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/asconwe/react-portfolio/issues"
-  },
-  "homepage": "https://github.com/asconwe/react-portfolio#readme",
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "axios": "^0.16.2",
-    "body-parser": "^1.17.2",
-    "dotenv": "^4.0.0",
-    "express": "^4.15.3",
-    "nodemailer": "^4.0.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-headroom": "^2.1.5",
-    "react-router-dom": "^4.1.1",
-    "react-transition-group": "^1.2.0",
-    "request": "^2.81.0",
-    "webpack": "^3.0.0",
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.1.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1"
+    "axios": "^0.18.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-headroom": "^2.2.2",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
