@@ -70,6 +70,11 @@ class Body extends React.Component {
                         <Route exact path="/" component={About} />
                         <Route path="/About" component={About} />
                         <Route path="/Portfolio" component={(props) => (<Portfolio projects={this.state.projects}/>) }/>
+<<<<<<< HEAD:src/components/children/Body.js
+=======
+                        <Route path="/Contact/:reset?" component={(props) => (<Contact resetContact={this.resetContact} handleEmail={this.handleEmail} submitted={this.state.emailSubmitted} sent={this.state.emailSent} error={this.state.emailError} />)} />
+                        <Route path="/my-valentine" component={(props) => (<Valentine />) }/>
+>>>>>>> c3a2c81fffa6259433b34abade9e8b4b8af3926b:app/components/children/Body.js
                     </div>
                 </ HashRouter>
             </div>
