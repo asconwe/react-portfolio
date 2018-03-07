@@ -23,43 +23,15 @@ class Body extends React.Component {
         super();
         this.state = {
             projects: [],
-            emailSubmitted: false,
-            emailSent: false,
-            emailError: false
         }
-        this.handleEmail = this.handleEmail.bind(this);
-        this.resetContact = this.resetContact.bind(this);
     }
     
     componentDidMount() {
-        axios.get('http://api.github.com/users/asconwe/repos?sort=created')
+        axios.get('https://api.github.com/users/asconwe/repos?sort=created')
             .then((repos) => {
-                console.log(repos)
                 const filteredProjects = repos.data.filter(repo => repo.description && repo.description[repo.description.length - 1] === '*').reverse();
                 this.setState({ projects: filteredProjects })
             })
-    }
-
-    handleEmail(body) { 
-        axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
-        this.setState({emailSubmitted: true});
-        axios({
-            headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-            url: 'https://formspree.io/asconwell@gmail.com',
-            method: 'post',
-            data: `name=${body.name}&email=${body.email}$text=${body.text}`
-        })
-            .then((sucess) => (this.setState({ emailSent: true })))
-            .catch((error) => (this.setState({ emialError: true })));
-    }
-
-    resetContact() {
-        console.log('reset')
-        this.setState({
-            emailSubmitted: false,
-            emailSent: false,
-            emailError: false
-        })
     }
 
     render() {
